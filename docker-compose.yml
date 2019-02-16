@@ -36,7 +36,7 @@ services:
     container_name : sspanel-nginx
     volumes:
       - ./configs/nginx/:/etc/nginx/conf.d
-      - static:/src/django-sspanel/static
+      - ./static:/src/django-sspanel/static
     ports:
       - 80:80
     depends_on:
